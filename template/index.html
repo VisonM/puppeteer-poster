@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>puppeteer poster</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    :root {
+      --padding_10: 10px;
+      --padding_20: 20px;
+      --margin_10: 10px;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper__header {
+      width: 100vw;
+      height: 40vh;
+      overflow: hidden;
+    }
+
+    .wrapper__header_image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .wrapper__inner {
+      position: relative;
+      padding: var(--padding_10);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper__content {
+      flex: 1;
+      border-radius: 4px;
+      background: #fff;
+      margin: -20px auto 0;
+      padding: var(--padding_10);
+      box-shadow: 0px 0px 1px 1px #f5f5f5;
+    }
+
+    .wrapper__content_title {
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: var(--margin_10);
+    }
+
+    .wrapper__content_description {
+      color: #888;
+      font-size: 12px;
+    }
+
+    .wrapper__footer {
+      border-top: 1px dashed #f5f5f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--padding_20) 0;
+    }
+
+    .wrapper__footer_info__description {
+      font-size: 12px;
+      color: #999;
+      margin-bottom: var(--margin_10);
+    }
+
+    .wrapper__footer_mini-logo {
+      width: 80px;
+      height: 80px;
+      background: url(https://res.suv666.com/static/common/auto_home_pc/img/898a93e.jpg) no-repeat;
+      background-position: -160px;
+      background-size: auto 80px;
+    }
+
+    .wrapper__footer_info__logo {
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper__header">
+      <img src="https://h1.ioliu.cn/bing/CahuitaNP_ZH-CN3985565209_1920x1080.jpg" class="wrapper__header_image" alt="">
+    </div>
+    <div class="wrapper__inner">
+      <div class="wrapper__content">
+        <h6 class="wrapper__content_title">
+          有车话题广场第二十期，据说生活中有两不借：不借老婆，不借车！
+        </h6>
+        <p class="wrapper__content_description">
+          热评圣手榜显示的是前一自然日的排行情况（本人排名为实时），以昨日合成烽火令数为准，排名前200可上榜，每晚0点后更新，另外会不定期对部分上榜用户发放惊喜奖励
+        </p>
+      </div>
+      <div class="wrapper__footer">
+        <div class="wrapper__footer_info">
+          <div class="wrapper__footer_info__description">
+            <p>我在有车以后中</p>
+            <p>发现了一条精彩内容</p>
+          </div>
+          <img class="wrapper__footer_info__logo"
+            src="https://res.suv666.com/static/common/auto_home_pc/img/97498a6.png">
+        </div>
+        <div class="wrapper__footer_mini-logo"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
